@@ -1,14 +1,14 @@
 #!name=Nicegram Premium 解锁
-#!desc=解锁 Nicegram Premium 会员功能
+#!desc=解锁 Nicegram Premium 会员功能 + 去广告
 #!author=yfamilys
 #!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/nicegram.png
 #!homepage=https://nicegram.app
 #!system=iOS
-#!tag=解锁,Nicegram
+#!tag=解锁,Nicegram,去广告
 
 [Script]
 http-request ^https?:\/\/restore-access\.indream\.app\/restoreAccess script-path=https://raw.githubusercontent.com/Xiaoxinkeji/loon-script/main/nicegram.js, timeout=10, tag=Nicegram解锁(indream)
-http-response ^https?:\/\/nicegram\.cloud\/api\/v\d\/(ai-assistant\/purchase-list|user\/info|telegram\/auth) script-path=https://raw.githubusercontent.com/Xiaoxinkeji/loon-script/main/nicegram.js, requires-body=true, timeout=10, tag=Nicegram解锁(cloud)
+http-response ^https?:\/\/nicegram\.cloud\/api\/v\d\/ script-path=https://raw.githubusercontent.com/Xiaoxinkeji/loon-script/main/nicegram.js, requires-body=true, timeout=10, tag=Nicegram解锁(cloud)
 
 [MITM]
 hostname = restore-access.indream.app, nicegram.cloud
