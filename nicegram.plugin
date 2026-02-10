@@ -1,13 +1,13 @@
-#!name=Nicegram Premium 解锁
-#!desc=解锁 Nicegram Premium 会员功能（修复版，适配最新 API）
-#!author=yfamilys (修复版)
+#!name=Nicegram Premium 瑙ｉ攣
+#!desc=瑙ｉ攣 Nicegram Premium 浼氬憳鍔熻兘锛堜慨澶嶇増锛岄€傞厤鏈€鏂?API锛?
+#!author=yfamilys (淇鐗?
 #!icon=https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/40/43/72/40437219-a4f4-d498-1f86-f4f2194fa4c0/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/100x100bb.png
 #!homepage=https://nicegram.app
 #!system=iOS
-#!tag=解锁,Nicegram
+#!tag=瑙ｉ攣,Nicegram
 
 [Script]
-http-response ^https?:\/\/nicegram\.cloud\/api\/v\d\/(ai-assistant\/purchase-list|user\/info|telegram\/auth) script-path=https://raw.githubusercontent.com/Xiaoxinkeji/loon-script/main/nicegram.js, requires-body=true, timeout=10, tag=Nicegram Premium 解锁
+http-response ^https?:\/\/nicegram\.cloud\/api\/v\d\/(ai-assistant\/purchase-list|user\/info|telegram\/auth) script-path=https://raw.githubusercontent.com/Xiaoxinkeji/loon-script/main/nicegram.js, requires-body=true, timeout=10, tag=Nicegram Premium 瑙ｉ攣
 
 [MITM]
 hostname = nicegram.cloud
