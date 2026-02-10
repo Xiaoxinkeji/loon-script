@@ -57,8 +57,8 @@ else if (url.indexOf("scroll-to-earn/user-info") !== -1) {
     }
     $done({ body: JSON.stringify(body) });
 }
-// 3) ads-list
-else if (url.indexOf("ads-list") !== -1) {
+// 3) ads-list or adsgram
+else if (url.indexOf("ads-list") !== -1 || url.indexOf("adsgram") !== -1) {
     var body = getBody();
     body.data = [];
     $done({ body: JSON.stringify(body) });
